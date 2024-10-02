@@ -1,132 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhupati Parmar Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img/fevicon.png" sizes="32x32">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Portfolio</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bhupati Parmar Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="Assets/Images/fevicon.png" sizes="32x32">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div id="loader" class="loader"></div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h2>Hello! I Am</h2>
-            <h1>Bhupati Parmar</h1>
-            <p>🚀 I'm Bhupati Parmar, a dynamic software engineering student passionate about transforming ideas into robust code. Proficient in various languages and frameworks, I thrive on challenges. Explore my journey and let's build something amazing together! 👨‍💻💡</p>
-            <div class="btn_cont"><a href="#contact" class="btn">Hire Me</a></div>
-        </div> 
-        <div class="hero-image">
-            <img src="your-image.jpg" alt="Bhupati Parmar">
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>I'm currently pursuing my Bachelor's degree in Computer Science and Engineering. My skills include expertise in coding languages such as Python, Java, and JavaScript, as well as front-end technologies like HTML, CSS, and React. I enjoy solving complex problems and crafting user-friendly applications.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="skills-container">
-            <div class="skills-circles">
-                <div class="circle">
-                    <canvas id="htmlCssChart"></canvas>
-                    <p>HTML & CSS</p>
+        <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <ul>
+                      <li><a href="#portfolio" id="portfolio-link"><h1>Portfolio</h1></a></li>  
+                    </ul>
                 </div>
-                <div class="circle">
-                    <canvas id="jsChart"></canvas>
-                    <p>JavaScript</p>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+                <div class="open-for-work">
+                    Open for Work
+                  </div>
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
                 </div>
-                <div class="circle">
-                    <canvas id="dsaChart"></canvas>
-                    <p>DSA - Solved 250+ Problems</p>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <video autoplay muted loop id="heroVideo">
+                <source src="Assets/Video/background_hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-text">
+                <h2>Hello! I Am</h2>
+                <h1>Bhupati Parmar</h1>
+                <p>🚀 I'm Bhupati Parmar, a dynamic software engineering student passionate about transforming ideas into robust code. Proficient in various languages and frameworks, I thrive on challenges. Explore my journey and let's build something amazing together! 👨‍💻💡</p>
+                <div class="btn_cont"><a href="#contact" class="btn">Hire Me</a></div>
+            </div> 
+            <div class="hero-image">
+                <img src="Assets/Images/pfp.jpg" alt="Bhupati Parmar">
+            </div>
+        </section>           
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>My name is Bhupati Parmar, and I am currently pursuing a Bachelor of Engineering in Computer Science in specialization in Blockchain Technology. I have a strong interest in technology, coding, and problem-solving, which drives my passion for software development and engineering. I enjoy learning about emerging technologies, and I aim to work on innovative projects that can make a difference. In addition to my academic pursuits, I am eager to gain practical experience and sharpen my skills to prepare for a successful career in the tech industry. When I’m not coding, I like to explore new hobbies and stay active.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="skills-container">
+                <div class="skills-circles">
+                    <div class="circle">
+                        <canvas id="htmlCssChart"></canvas>
+                        <p>HTML & CSS</p>
+                    </div>
+                    <div class="circle">
+                        <canvas id="jsChart"></canvas>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="circle">
+                        <canvas id="dsaChart"></canvas>
+                        <p>DSA - Solved 250+ Problems</p>
+                    </div>
+                    <div class="circle">
+                        <canvas id="mernChart"></canvas>
+                        <p>MERN</p>
+                    </div>
                 </div>
-                <div class="circle">
-                    <canvas id="mernChart"></canvas>
-                    <p>MERN</p>
+                <div class="skills-description">
+                    <h2>My Skills</h2>
+                    <p>Beautiful & Unique Digital Experiences</p>
+                    <p>I am proficient in various programming languages 💻👨‍💻 and have a strong aptitude for problem-solving 🧠🔍. My experience in software development 🛠️📱 allows me to build efficient solutions while collaborating well with others in teamwork 🤝👥 settings. I approach challenges with analytical thinking 📊🧮, and I am highly adaptable 🔄🚀 to changing environments. Constantly eager to learn new technologies 📚⚙️, I also manage my tasks with strong time management ⏰📅 skills.🚀</p>
+                    <a href="Assets/Files/CV.pdf" download class="btn">Download CV</a>
                 </div>
             </div>
-            <div class="skills-description">
-                <h2>My Skills</h2>
-                <p>Beautiful & Unique Digital Experiences</p>
-                <p>🔧 My skill set is a symphony of coding languages, seamlessly blending creativity and functionality. From crafting captivating web interfaces to diving into the depths of C++, I bring versatility to every project. Let's build something extraordinary together! 🚀</p>
-                <a href="your-cv.pdf" download class="btn">Download CV</a>
+        </section>
+
+        <!-- Portfolio Section -->
+        <!-- Portfolio Section -->
+    <section class="work" id="work">
+        <h2>My Projects</h2> <!-- Added heading -->
+        <div class="work-container">
+            <div class="work-item">
+                <img src="Assets/Images/chatbot.png" alt="Chatbot">
+                <p class="work-description">Chatbot - An intelligent chatbot that enhances user interaction and automates responses.</p>
+            </div>
+            <!-- <div class="work-item">
+                <img src="images/codehive.jpeg" alt="CodeHive">
+                <p class="work-description">CodeHive - A collaborative platform for developers to share and review code.</p>
+            </div> -->
+            <div class="image-container">
+                <a href="http://thecodehive.vercel.app" target="_blank">
+                    <img src="Assets/Images/codehive.jpeg" alt="Codehive" id="project-image">
+                </a>
+                <p>Visit our <a href="http://thecodehive.vercel.app" target="_blank">Website</a> for more details.</p>
+                <p>CodeHive - A collaborative platform for developers to share and review code.</p>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <h2>My Work</h2>
-        <div class="portfolio-items">
-            <div class="item">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project One</h3>
-                <p>Description of Project One.</p>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to collaborate or just have a chat, feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:bipulsingh91550@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/bhupati-parmar-075998249/" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Kennys13" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
             </div>
-            <div class="item">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project Two</h3>
-                <p>Description of Project Two.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Chandigarh, Punjab</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91 9525289281</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to collaborate or just have a chat, feel free to reach out!</p>
-        <div class="contact-links">
-            <a href="mailto:bipulsingh91550@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://www.linkedin.com/in/bhupati-parmar-075998249/" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/Kennys13" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Chandigarh, Punjab</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone-alt"></i>
-                <p>+91 9525289281</p>
-            </div>
-        </div>
-    </section>
+        <!-- Footer Section -->
+        <footer>
+            <p>Portfolio Website - Bhupati Parmar</p>
+            <p>&copy; 2024 Portfolio | All Rights Reserved.</p>
+        </footer>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>Portfolio Website - Bhupati Parmar</p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <p>Copyright 2023 Portfolio | All Rights Reserved.</p>
-    </footer>
-
-    <!-- JavaScript for Burger Menu and Charts -->
-    <script src="script.js"></script>
-</body>
-</html>
+        <!-- JavaScript for Burger Menu and Charts -->
+        <script src="script.js"></script>
+    </body>
+    </html>
